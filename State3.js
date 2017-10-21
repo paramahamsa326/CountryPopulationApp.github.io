@@ -8,7 +8,8 @@ State3.prototype.stateChange=function (objectContext) {
         objectContext.number+=4;
 
         objectContext.stateName="State3";
-        console.log(JSON.stringify(objectContext));
+        document.getElementById("statepatternlog").innerHTML=document.getElementById("statepatternlog").innerHTML.toString()+"<br>".toString()+JSON.stringify(objectContext).toString();
+
         objectContext.state=new State1();
     }
 }
